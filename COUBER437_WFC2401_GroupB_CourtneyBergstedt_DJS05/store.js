@@ -45,3 +45,10 @@ function counterReducer(state = { count: 0 }, action) {
     }
 }
  
+//Create store with the reducer
+const store = createStore(counterReducer);
+
+//Subscribe to state changes and log the new state
+store.subscribe(() => {
+    console.log(store.getState());
+});
