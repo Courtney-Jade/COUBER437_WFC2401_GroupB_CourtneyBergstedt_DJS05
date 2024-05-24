@@ -1,4 +1,4 @@
-# Redux-Inspired Store Demo
+# Redux-Inspired Store
 ## Overview
 This project demonstrates the implementation of a Redux-inspired store to manage the state of a tally counter. The store includes functions to get the current state, dispatch actions to update the state, and subscribe to state changes. The focus is on state management without UI rendering, with all state changes observable through console logs.
 
