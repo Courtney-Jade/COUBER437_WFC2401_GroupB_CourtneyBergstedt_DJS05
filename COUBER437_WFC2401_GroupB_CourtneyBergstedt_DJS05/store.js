@@ -52,3 +52,18 @@ const store = createStore(counterReducer);
 store.subscribe(() => {
     console.log(store.getState());
 });
+
+// Initial state check
+console.log('Initial state:', store.getState());
+
+// Test cases
+console.log('Dispatching ADD');
+store.dispatch({ type: 'ADD' });
+console.log('Dispatching ADD');
+store.dispatch({ type: 'ADD' });
+
+console.log('Dispatching SUBTRACT');
+store.dispatch({ type: 'SUBTRACT' });
+
+console.log('Dispatching RESET');
+store.dispatch({ type: 'RESET' });
