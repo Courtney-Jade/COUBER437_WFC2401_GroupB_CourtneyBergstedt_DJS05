@@ -21,5 +21,13 @@ function createStore(reducer) {
       };
     }
   
-  
+  //Initialize the state
+  dispatch({ type: '@@INIT' });
+
+  return {
+    getState,
+    dispatch,
+    subscribe
+  };
+}
  
